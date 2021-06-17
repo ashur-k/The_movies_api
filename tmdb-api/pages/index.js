@@ -1,19 +1,15 @@
-import Head from 'next/head'
+import MovieList from '../components/MovieList'
 
-
-export default function Home({articles}) {
+export default function Home({articles:{results}}) {
   //console.log('assfsdaf', articles)
-  const results = articles.results;
-  console.log(results)
-  return (
+  
+  // console.log(results)
+  
+     return (
     <div>
-        <h1>Welcom to the Next</h1> 
-        <ul>
-        {
-          results.map((article) =>(       
-                <li>{article.original_title}</li>
-          ))}
-      </ul>
+
+          <MovieList results={results} />
+        
     </div>
   )
 }
