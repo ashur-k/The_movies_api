@@ -7,12 +7,13 @@ export default function Home({articles}) {
   console.log(results)
   return (
     <div>
-        <h1>Welcom to the Next</h1>
+        <h1>Welcom to the Next</h1> 
+        <ul>
         {
-          results.map((article) =>(
-                <h3>{article.original_title}</h3>
+          results.map((article) =>(       
+                <li>{article.original_title}</li>
           ))}
-
+      </ul>
     </div>
   )
 }
