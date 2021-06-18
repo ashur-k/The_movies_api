@@ -1,0 +1,23 @@
+Step -> 1:
+    Creating typescript config file.
+    touch tsconfig.json
+
+Step -> 2:
+    installing typescript, type react, type node
+    npm install --save-dev typescript @types/react @types/node
+        @types/react: 
+             type React. ... Using TypeScript with React allows you to 
+             develop strongly-typed components that have identifiable props 
+             and state objects, which will ensure any usages of your 
+             components are type checked by the compiler.
+        @types/nodes:
+            nodeType property is an integer that identifies what the node is. 
+            It distinguishes different kind of nodes from each other, such as 
+            elements , text and comments.
+(imp points):
+    tsconfig.json is going to stay empty but once "npm run dev" is executed
+    tsconfing will get generated with with typscript settings configurations.
+
+Step -> 3:
+    starting server
+    npm run dev

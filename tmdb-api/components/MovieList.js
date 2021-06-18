@@ -3,7 +3,7 @@ import MovieItem from './MovieItem'
 import articleStyles from '../styles/MovieList.module.css'
 
 const MovieList = ({results}) => {
-    console.log(results)
+    // console.log(results)
     const [searchTerm, setSearchTerm] = useState('')
     const newResults = results
     return (
