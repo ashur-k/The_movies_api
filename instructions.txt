@@ -14,6 +14,9 @@ Step -> 2:
             nodeType property is an integer that identifies what the node is. 
             It distinguishes different kind of nodes from each other, such as 
             elements , text and comments.
+    
+    can also do 
+        npx tsc --init (if earlier tsconfig.json is not created)
 (imp points):
     tsconfig.json is going to stay empty but once "npm run dev" is executed
     tsconfing will get generated with with typscript settings configurations.
@@ -21,3 +24,26 @@ Step -> 2:
 Step -> 3:
     starting server
     npm run dev
+
+
+
+Useful information Datatypes in TypeScript:
+    https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+    For image URL data type:
+    https://stackoverflow.com/questions/41791933/in-typescript-what-is-the-type-of-image
+
+
+error-Handeling:
+    While converting _app.js to app.tsx, app was crashed. Maybe changning file extensions 
+    has made some unknown changes to other packages.
+    error description:
+        HookWebpackError: Cannot read property 'replace' of undefined
+    Solution Applied:
+    To restore APP I did npm install to reset packages to default and it worked.
+
+
+Extra Information:
+    
+    yarn add -D axe-core
+    accescbility test enigine
+    makes website more easily accessible for people with disability 

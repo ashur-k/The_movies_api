@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import articleStyles from '../styles/MovieList.module.css'
 
 const MovieItem = ({result}) => {
@@ -9,6 +8,7 @@ const MovieItem = ({result}) => {
                 <a className={articleStyles.card}>
                     <h3>{result.original_title} &rarr;</h3>
                     <p>{result.overview}</p>
+                   
                 </a>
         
     )
